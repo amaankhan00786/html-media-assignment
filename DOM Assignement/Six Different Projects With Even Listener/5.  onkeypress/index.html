@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnKeyPress</title>
+  </head>
+  <body>
+    <div id="container">
+      <p id="para"></p>
+    </div>
+
+    css added
+    <style>
+      #container {
+        height: 80vh;
+        background-color: bisque;
+      }
+
+      #para {
+        font-size: 50px;
+      }
+    </style>
+
+    JavaScript Added
+    <script>
+      let change = document.getElementById("container");
+      let paragraph = document.getElementById("para");
+
+      change.addEventListener("keypress", (e) => {
+        change.style.backgroundColor = "yellow";
+        paragraph.innerText = "You Press " + e.key + " Key"
+      });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnKeyPress</title>
+  </head>
+  <body>
+    <div id="container" tabindex="0">
+      <p id="para"></p>
+    </div>
+
+    <!-- css added -->
+    <style>
+      #container {
+        height: 80vh;
+        background-color: bisque;
+      }
+
+      #para {
+        font-size: 50px;
+      }
+    </style>
+
+    <!-- JavaScript Added -->
+    <script>
+      let change = document.getElementById("container");
+      let paragraph = document.getElementById("para");
+
+      change.addEventListener("keypress", (e) => {
+        change.style.backgroundColor = "yellow";
+        paragraph.innerText = "You Press " + e.key + " Key";
+      });
+    </script>
+  </body>
+</html>

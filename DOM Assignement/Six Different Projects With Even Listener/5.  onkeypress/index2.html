@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnKeyPress</title>
+  </head>
+  <body>
+    <div id="container" tabindex="0">
+      <p id="para"></p>
+    </div>
+
+    <!-- css added -->
+    <style>
+      #container {
+        height: 80vh;
+        background-color: bisque;
+      }
+
+      #para {
+        font-size: 50px;
+      }
+    </style>
+
+    <!-- JavaScript Added -->
+    <script>
+      let change = document.getElementById("container");
+      let paragraph = document.getElementById("para");
+
+      change.addEventListener("keydown", (e) => {
+        change.style.backgroundColor = "yellow";
+        if (e.key === "ArrowUp") {
+          paragraph.innerText = "You Pressed Up Arrow Key";
+        } else if (e.key === "ArrowDown") {
+          paragraph.innerText = "You Pressed Down Arrow Key";
+        } else if (e.key === "ArrowLeft") {
+          paragraph.innerText = "You Pressed Left Arrow Key";
+        } else if (e.key === "ArrowRight") {
+          paragraph.innerText = "You Pressed Right Arrow Key";
+        } else {
+          paragraph.innerText = "You Pressed " + e.key + " Key";
+        }
+      });
+    </script>
+  </body>
+</html>

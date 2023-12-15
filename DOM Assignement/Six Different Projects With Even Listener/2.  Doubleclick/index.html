@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleClick Event</title>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla totam fugiat cumque quos tempore assumenda magnam. Sit, placeat ut facere doloribus debitis ea rem nobis, consectetur sunt itaque corporis recusandae?
+        </div>
+    </div>
+
+
+    <!-- css add   -->
+    <style>
+        #container {
+            background-color: red;
+            height: 40vh;
+        }
+        #box {
+            display: none;
+            height: 35vh;
+            font-size: 40px;
+            margin-top: 30px;
+        }
+    </style>
+
+
+<!-- javascript add  -->
+    <script>
+         
+     let change = document.getElementById("container");
+     let change1 = document.getElementById("box");
+
+     change.addEventListener("dblclick", () => {
+             change1.style.display = "block";
+             change1.style.backgroundColor= "black";
+             change1.style.color= "white";
+     })
+    </script>
+</body>
+</html>

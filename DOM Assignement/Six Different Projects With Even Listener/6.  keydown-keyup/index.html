@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyUp and KeyDown</title>
+  </head>
+  <body>
+    <!-- HTML  Added -->
+    <div id="box"></div>
+
+    <!-- CSS Added  -->
+    <style>
+      #box {
+        padding: 50px;
+        font-size: 40px;
+        background-color: aqua;
+      }
+    </style>
+
+    <!-- JavaScript Added  -->
+    <script>
+      let change2 = document.getElementById("box");
+
+      document.addEventListener("keyup", (e) => {
+        change2.innerText = e.key + " " + "Pressed By You";
+        change2.style.backgroundColor = "red";
+      });
+
+
+      document.addEventListener("kedown", (e) => {
+        change2.innerText = e.key + " " + "Pressed By You";
+      });
+    </script>
+  </body>
+</html>
